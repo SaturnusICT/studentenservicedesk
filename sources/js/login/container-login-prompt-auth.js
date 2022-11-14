@@ -1,6 +1,8 @@
 var stud = document.getElementById('container-login-prompt-auth-stud');
+var norole = document.getElementById('notify_login_norole');
 var beg = document.getElementById('container-login-prompt-auth-beg');
 var doc = document.getElementById('container-login-prompt-auth-doc');
+var login_container = document.getElementById('container-login');
 var login_prompt_auth_lvl;
 
 function auth_controler_stud() {
@@ -36,7 +38,16 @@ function auth_login () {
         console.log("3 3"); // Als knop docent is ingedrukt
         window.location.href = "docent.htm";
     } else if(login_prompt_auth_lvl != "1" & login_prompt_auth_lvl != "2" & login_prompt_auth_lvl != "3") {
-        console.log("None"); // Als geen knoppen zijn ingedrukt
+        login_container.classList.remove('blur_Off');
+        login_container.classList.add('blur_On');
+        norole.classList.remove('div_Away');
+        norole.classList.add('div_Show');
     }
-
 } 
+
+function notify_norole_oke() {
+    norole.classList.remove('div_Show');
+    norole.classList.add('div_Away');
+    login_container.classList.remove('blur_On');
+    login_container.classList.add('blur_Off');
+}

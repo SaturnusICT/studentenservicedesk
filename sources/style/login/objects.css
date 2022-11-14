@@ -104,3 +104,47 @@
     text-align: center;
     color: var(--fg);
 }
+
+
+#notify-norole-header {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#notify-norole-p {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    color: var(--fg);
+}
+
+#notify-norole-h {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#notify-norole-p {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    color: var(--fg);
+}
+
