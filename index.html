@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studenten Servicedesk</title>
+    <link rel="shortcut icon" href="sources/afb/icons/favicon.ico">
+    <link rel="stylesheet" href="sources/style/login/global.css">
+    <link rel="stylesheet" href="sources/style/global.css">
+</head>
+<body>
+   <div id="container-login" class="container-login blur_Off">
+        <div class="container-login-photo">
+            <!--Random Foto Uiteindelijk-->
+            <img id="container-login-photo-img" class="container-login-photo-pictures" alt="loginPhoto" src="sources/afb/pictures/login_wall.png" onclick="container_login_photo_chpicture()">
+            <script src="sources/js/login/photo-chpicture.js"></script>
+        </div>
+        <div class="container-login-prompt">
+            <div class="container-login-prompt-headerbox">
+                <h1 id="container-login-prompt-headerbox-h1">Studenten Servicedesk</h1>
+            </div>
+            <div class="container-login-prompt-logincontainer">
+                <div class="container-login-prompt-logincontainer-username">
+                    <label id="db-logincontainer-username-label" for="db-logincontainer-username">Gebruikersnaam</label>
+                    <input type="text" id="db-logincontainer-username"> 
+                </div>
+                <div class="container-login-prompt-logincontainer-password">
+                    <label id="db-logincontainer-password-label" for="db-logincontainer-password">Wachtwoord</label>
+                    <input type="password" id="db-logincontainer-password"> 
+                </div>
+                <div class="container-login-prompt-logincontainer-forgot">
+                    <p id="container-login-prompt-logincontainer-forgot-p" onclick="container_login_prompt_logincontainer_forgotww()">Wachtwoord Vergeten?</p>
+                    <script src="sources/js/login/logincontainer-forgot-popup.js"></script>
+
+                </div>
+                <div class="container-login-prompt-auth">
+                    <button onclick="auth_controler_stud()" class="container-login-prompt-auth-def" id="container-login-prompt-auth-stud">Student</button> 
+                    <button onclick="auth_controler_beg()" class="container-login-prompt-auth-def" id="container-login-prompt-auth-beg">Begeleider</button> 
+                    <button onclick="auth_controler_doc()" class="container-login-prompt-auth-def" id="container-login-prompt-auth-doc">Docent</button> 
+                    <script src="sources/js/login/container-login-prompt-auth.js"></script>
+
+                </div>
+                <div class="container-login-prompt-logincontainer-submit">
+                    <button onclick="auth_login()" class="container-login-prompt-logincontainer-submit-button" id="container-login-prompt-logincontainer-submit-button">Inloggen</button>
+                    <script src="sources/js/login/container-login-prompt-auth.js"></script>
+                </div>
+            </div>
+        </div>
+   </div> 
+<!-- Notifcation Popups Depends on global.css Notification Library-->
+<div id="notify_login_forgotww" class="notifcation-lib-base div_Away">
+    <div class="notification-lib-header">
+       <h1 id="notify-forgotww-h">Wachtwoord Vergeten?</h1> 
+    </div>
+    <div class="notify-lib-par">
+        <p id="notify-forgotww-p">
+            Als u uw wachtwoord bent vergeten moet u aan uw docent vragen om deze voor u te wijzigen!
+            <br>
+            Dit is om de stageomgeving zo veilig mogelijk te houden voor meer vragen kunt u bij de docent te terecht.
+        </p>
+    </div>
+    <div class="notify-lib-ctrl-ok-v-1">
+        <button onclick="notify_forgotww_oke()" class="notify-lib-ctrl-ok-v-1-btn">Oke</button>
+    </div>
+</div>
+
+</body>
+</html>

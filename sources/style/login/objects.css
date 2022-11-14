@@ -1,0 +1,106 @@
+#container-login-prompt-headerbox-h1 {
+    color: var(--nord10);
+    background-color: none;
+    background: none;
+    font-size: 48px;
+    left: 5%;
+    position: relative;
+}
+#db-logincontainer-username-label {
+    color: var(--fg);
+    font-size: 18px;
+    left: 3%;
+    position: relative;
+    left: 5%;
+    top: 10%;
+    font-weight: bold;
+    background: none;
+    background-color: none;
+}
+#db-logincontainer-username {
+    position: absolute;
+    top: 3%;
+    left: 35%;
+    height: 20%;
+    width: 50%;
+    background: none;
+    background-color: none;
+    padding: 8px;
+    border-color: var(--nord10);
+    color: var(--fg);
+    border-radius: 25px;
+}
+#db-logincontainer-password-label {
+    position: absolute;
+    top: 5%;
+    font-size: 18px;
+    left: 5%;
+    font-weight: bold;
+    background-color: none;
+    background: none;
+    color: var(--fg);
+}
+#db-logincontainer-password {
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    padding: 8px;
+    border-radius: 25px;
+    height: 20%;
+    width: 50%;
+    border-color: var(--nord10);
+    color: var(--fg);
+}
+
+#container-login-prompt-logincontainer-forgot-p {
+    position: absolute;
+    font-size: 8px;
+    color: var(--nord10);
+    background-color: none;
+    background: none;
+    font-style: italic;
+    cursor: pointer;
+    left: 15%;
+}
+
+#container-login-prompt-logincontainer-submit-button {
+    position: absolute;
+    height: 80%;
+    top: 15%;
+    width: 40%;
+    border: none;
+    border-radius: 25px;
+    color: var(--fg);
+    font-weight: bold;
+    font-size: 16px;
+    border: solid 2px;
+    border-color: var(--nord10);
+    cursor: pointer;
+    left: 5%;
+}
+
+#container-login-prompt-logincontainer-submit-button:hover {
+    background-color: var(--nord10);
+    transition: 0.7s;
+}
+
+#notify-forgotww-h {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#notify-forgotww-p {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    color: var(--fg);
+}

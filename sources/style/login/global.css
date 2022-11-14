@@ -1,0 +1,103 @@
+@import "objects.css";
+
+.container-login {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 0px;
+}
+.container-login-photo {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    left: 0;
+}
+.container-login-photo-pictures {
+    position: inherit;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+.container-login-prompt {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 40%;
+    border: solid 0px;
+}
+.container-login-prompt-headerbox {
+    position: absolute;
+    top: 2%;
+    left: 0px;
+    height: 15%;
+    width: 90%;
+    border: solid 0px;
+}
+.container-login-prompt-logincontainer {
+    position: absolute;
+    top: 32%;
+    left: 0px;
+    height: 55%;
+    width: 90%;
+    border: solid 0px;
+    background-color: none;
+}
+.container-login-prompt-logincontainer-username {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    top: 0%;
+    border: solid 0px;
+}
+.container-login-prompt-logincontainer-password {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    top: 14%;
+    border: solid 0px;
+}
+.container-login-prompt-logincontainer-forgot {
+    position: absolute;
+    top: 28%;
+    height: 5%;
+    width: 100%;
+    border: solid 0px;
+}
+.container-login-prompt-logincontainer-submit {
+
+    position: absolute;
+    top: 50%;
+    height: 18%;
+    width: 100%;
+    border: solid 0px;
+}
+.container-login-prompt-auth {
+    position: absolute;
+    height: 10%;
+    left: 2%;
+    width: 100%;
+    border: solid 0px;
+    top: 38%;
+    border-radius: 25px;
+}
+
+.container-login-prompt-auth-def {
+    border-radius: 25px;
+    border: none;
+    height: 100%;
+    width: 32.40%;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--fg);
+    font-weight: bold;
+    background-color: var(--bg);
+}
+
+.container-login-prompt-auth-def:hover {
+    background-color: var(--nord10);
+    transition: 0.5s;
+}
+
+.container-login-prompt-auth-def:active {
+    background: var(--nord10);
+}
