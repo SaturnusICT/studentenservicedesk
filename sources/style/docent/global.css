@@ -1,0 +1,47 @@
+@import "objects.css";
+
+.docenten-container {
+    height: 100%;
+    width: 100%;
+}
+
+.docenten-container-bottombar {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    border: solid 0px;
+    bottom: 1%;
+}
+
+.controlbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    left: 1%;
+    width: 98%;
+    border: solid 2px;
+    background-color: var(--nord10);
+    border-radius: 25px;
+    border-color: var(--nord10);
+}
+
+.docenten-container-display {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    border: solid 0px;
+}
+
+.docenten-container-display-draw {
+    height: 90%;
+    width: 90%;
+    padding: 10px;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: var(--nord10);
+    margin: auto;
+}
