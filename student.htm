@@ -17,11 +17,13 @@
                     <img id="controlbox-logout-img" src="sources/afb/icons/logout.ico">
                 </div>
                 <div class="controlbar-controlbox">
-                    <div class="controlbar-controlbox-right">
+                    <div onclick="student_mvRight()" id="mvBtn_Right" class="controlbar-controlbox-right div_Show">
                         <h1 class="controlbar-controlbox-arrowstyle">🢂</h1>
+                        <script src="sources/js/student/container-display-switch.js"></script>
                     </div>
-                    <div class="controlbar-controlbox-left div_Away">
+                    <div id="mvBtn_Left" class="controlbar-controlbox-left div_Away" onclick="student_mvLeft()">
                         <h1 class="controlbar-controlbox-arrowstyle">🢀</h1>
+                        <script src="sources/js/student/container-display-switch.js"></script>
                     </div>
 
                 </div>
@@ -29,6 +31,12 @@
         </div>
         <div class="student-container-display">
             <div class="student-container-display-draw">
+                <div id="student-container-display-rm" class="student-container-display-draw-right div_Show"></div>
+                <div id="student-container-display-rf" class="student-container-display-draw-right div_Away">
+                    <p>Hoi</p>
+                </div>
+                <div class="student-container-display-draw-left"></div>
+                <script src="sources/js/student/container-display-switch.js"></script>
             </div>
         </div>
      </div>
