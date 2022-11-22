@@ -8,9 +8,11 @@
     <link rel="shortcut icon" href="sources/afb/icons/favicon.ico">
     <link rel="stylesheet" href="sources/style/global.css">
     <link rel="stylesheet" href="sources/style/student/global.css">
+    <script src="sources/js/student/clockctrl.js"></script>
 </head>
 <body>
-     <div class="student-container">
+
+     <div id="student_container" class="student-container blur_Off">
         <div class="student-container-bottombar">
             <div class="controlbar">
                 <div class="controlbar-logout" onclick="controlbox_logout_confirm()">
@@ -31,14 +33,62 @@
         </div>
         <div class="student-container-display">
             <div class="student-container-display-draw">
-                <div id="student-container-display-rm" class="student-container-display-draw-right div_Show"></div>
-                <div id="student-container-display-rf" class="student-container-display-draw-right div_Away">
-                    <p>Hoi</p>
+                <div id="student-container-display-rm" class="student-container-display-draw-right div_Show">
+                    <img id="std_container_Afb" src="sources/afb/pictures/login_wall.png">
                 </div>
-                <div class="student-container-display-draw-left"></div>
+                <div id="student-container-display-rf" class="student-container-display-draw-right div_Away">
+                    <h1 id="student-container-display-rf-fb-h">Feedback!</h1>
+                    <forum class="student-container-display-rf-fb-forum">
+                        <div class="student-feedback-forum">
+                            <textarea id="student-feedback-forum-text"></textarea>
+                        </div>
+                        <button id="student-feedback-submit" type="submit">Stuur!</button>
+                    </forum>
+                </div>
+                <div class="student-container-display-draw-left">
+                    <button id="button_clock_student" onclick="clockCtrl()" class="clockbutton-button">Inklokken!</button>
+                    <script src="sources/js/student/clockctrl.js"></script>
+                </div>
                 <script src="sources/js/student/container-display-switch.js"></script>
             </div>
         </div>
      </div>
+
+  <div id="notify_clock_out" class="notifcation-lib-base div_Away">
+        <div class="notifcation-lib-header">
+            <h1 id="notify-clockout-h1">Weet je zeker dat je wilt uitklokken?</h1>
+        </div>
+        <div class="notify-lib-par">
+            <p id="notify-clockout-p">
+                Als u het zeker weet klik dan op Ja
+                <br>
+                Als u ingeklokt wilt blijven klik dan op Nee
+            </p>
+        </div>
+        <div class="notify-lib-ctrl-yn-v-1">
+            <button onclick="notify_clockout_y()" class="notify-lib-ctrl-yn-y-v1-btn">Ja</button>
+            <button onclick="notify_clockout_n()" class="notify-lib-ctrl-yn-n-v1-btn">Nee</button>
+        </div>
+    </div>
+    <script src="sources/js/student/clockctrl.js"></script>
+
+    <div id="notify_logout_student" class="notifcation-lib-base div_Away">
+        <div class="notifcation-lib-header">
+            <h1 id="notify-slogout-h1">Weet je zeker dat je wilt uitloggen?</h1>
+        </div>
+        <div class="notify-lib-par">
+            <p id="notify-slogout-p">
+                Weet u zeker dat u wilt uitloggen
+                <br>
+                Dit brengt u terug naar het inlogscherm
+            </p>
+        </div>
+        <div class="notify-lib-ctrl-yn-v-1">
+            <button onclick="notify_slogout_y()" class="notify-lib-ctrl-yn-y-v1-btn">Ja</button>
+            <button onclick="notify_slogout_n()" class="notify-lib-ctrl-yn-n-v1-btn">Nee</button>
+    <script src="sources/js/student/logout.js"></script>
+        </div>
+    </div>
+    <script src="sources/js/student/logout.js"></script>
 </body>
 </html>

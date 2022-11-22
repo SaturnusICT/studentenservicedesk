@@ -9,3 +9,103 @@
     top: 15%;
 }
 
+#std_container_Afb {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 0px 25px 25px 0px;
+}
+
+#student-container-display-rf-fb-h {
+    height: 6%;
+    margin: 0px;
+    width: 28%;
+    font-style: italic;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: var(--fg);
+}
+
+#student-feedback-submit {
+    position: relative;
+    display: block;
+    top: 5%;
+    height: 10%;
+    width: 30%;
+    border-radius: 25px;
+    border: solid 2px;
+    border-color: var(--nord10);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--fg);
+}
+
+#student-feedback-forum-text {
+    height: 95%;
+    border: none;
+    position: relative;
+    width: 90%;
+    top: 2%;
+    color: var(--fg);
+    left: 2%;
+}
+
+#student-feedback-forum-text:active {
+    background: none;
+    background-color: none;
+}
+
+#student-feedback-submit:active {
+    background-color: var(--nord10);
+}
+
+#student-feedback-submit:hover {
+    background-color: var(--nord10);
+    transition: 0.5s;
+}
+
+#notify-clockout-h1 {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#notify-clockout-p {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    color: var(--fg);
+}
+
+#notify-slogout-h1 {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#notify-slogout-p {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    color: var(--fg);
+}
+
+
