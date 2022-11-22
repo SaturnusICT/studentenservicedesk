@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="sources/style/login/global.css">
     <link rel="stylesheet" href="sources/style/global.css">
 </head>
-<body>
+<body onload="scalefix()">
    <div id="container-login" class="container-login blur_Off">
         <div class="container-login-photo">
             <!--Random Foto Uiteindelijk-->
@@ -34,7 +34,7 @@
                     <script src="sources/js/login/logincontainer-forgot-popup.js"></script>
 
                 </div>
-                <div class="container-login-prompt-auth">
+                <div class="container-login-prompt-auth" id="container-login-prompt-auth">
                     <button onclick="auth_controler_stud()" class="container-login-prompt-auth-def" id="container-login-prompt-auth-stud">Student</button> 
                     <button onclick="auth_controler_beg()" class="container-login-prompt-auth-def" id="container-login-prompt-auth-beg">Begeleider</button> 
                     <button onclick="auth_controler_doc()" class="container-login-prompt-auth-def" id="container-login-prompt-auth-doc">Docent</button> 
@@ -80,6 +80,6 @@
         <button onclick="notify_norole_oke()" class="notify-lib-ctrl-ok-v-1-btn">Oke</button>
     </div>
 <script src="sources/js/login/container-login-prompt-auth.js"></script>
-
+<script src="sources/js/login/scalefix.js"></script>
 </body>
 </html>
