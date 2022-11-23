@@ -4,6 +4,27 @@ var beg = document.getElementById('container-login-prompt-auth-beg');
 var doc = document.getElementById('container-login-prompt-auth-doc');
 var login_container = document.getElementById('container-login');
 var login_prompt_auth_lvl;
+var userbox = document.getElementById('db-logincontainer-username');
+var passbox = document.getElementById('db-logincontainer-password');
+
+var userAccounts = [
+    {
+        username: 'admins',
+        password: '123',
+        role: 's'
+    },
+    {
+        username: 'adminb',
+        password: '123',
+        role: 'b'
+    },
+    {
+        username: 'admin',
+        password: '123',
+        role: 'd'
+    }
+];
+
 
 function auth_controler_stud() {
     stud.style.backgroundColor = "#5E81AC";
@@ -28,6 +49,7 @@ function auth_controler_doc() {
 
 
 function auth_login () {
+    /// Oud systeem
     if (login_prompt_auth_lvl == "1") {
         console.log("1 1"); // Als knop Studenten is ingedrukt
         window.location.href = "student.htm";
@@ -43,7 +65,13 @@ function auth_login () {
         norole.classList.remove('div_Away');
         norole.classList.add('div_Show');
     }
-} 
+
+// userbox.value passbox.value
+}
+
+
+
+
 
 function notify_norole_oke() {
     norole.classList.remove('div_Show');

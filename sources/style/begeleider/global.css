@@ -1,8 +1,13 @@
 @import "objects.css";
 
+body {
+    overflow: hidden;
+}
+
 .begeleider-container {
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .begeleider-container-bottombar {
@@ -28,20 +33,205 @@
     border-color: var(--nord10);
 }
 
-.begeleider-container-display {
-    display: flex;
-    height: 90%;
-    width: 100%;
+.controlbar-logout {
+    height: 100%;
     position: absolute;
+    border-radius: 25px;
     border: solid 0px;
+    left: 1%;
+    background-color: var(--bg);
+    width: 5%;
+    cursor: pointer;
 }
 
-.begeleider-container-display-draw {
-    height: 90%;
-    width: 90%;
-    padding: 10px;
+.begeleider-container-display-right {
+    position: absolute;
+    height: 100%;
+    width: 40%;
     border: solid 0px;
-    border-radius: 25px;
-    background-color: var(--nord10);
-    margin: auto;
+    background-color: var(--bg);
+    border-radius: 0px 25px 25px 0px;
 }
+
+.toolbox-cal {
+    border: solid 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 80%;
+    background-color: var(--bg);
+    width: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.begeleider-container-draw {
+    position: absolute;
+    height: 90%;
+    width: 98%;
+    top: 2%;
+    left: 1%;
+    border: solid 0px;
+    background-color: var(--nord10);
+    border-radius: 25px;
+}
+
+.draw-left {
+    position: relative;
+    height: 100%;
+    border: solid 0px;
+    background-color: var(--nord10);
+    border: 0px solid;
+    border-radius: 25px 0px 0px 25px;
+    width: 60%;
+}
+
+.draw-right {
+    position: absolute;
+    height: 100%;
+    width: 40%;
+    border: solid 0px;
+    background-color: var(--nord10);
+    right: 0px;
+    top: 0px;
+    border-radius: 0px 25px 25px 0px ;
+}
+
+.app-cal-schedule {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 0px;
+    border-left: solid 5px;
+    border-color: var(--bg);
+    background: none;
+}
+
+.app-cal-actual {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 0px;
+    border-left: solid 5px;
+    border-color: var(--bg);
+    background: none;
+}
+
+.toolbox-feedback {
+    border: solid 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 80%;
+    background-color: var(--bg);
+    width: 40px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.popup-container-fb {
+    border: solid 2px;
+    border-color: var(--bg);
+    border-radius: 25px 0px 0px 25px;
+    background-color: var(--bg);
+    height: 12%;
+    width: 20%;
+    top: 3%;
+    right: 0%;
+    position: absolute; 
+}
+
+.popup-container-fb-header {
+    border: solid 0px;
+    background-color: none;
+    border-radius: 25px 0px 0px 0px;
+    height: 40%;
+    width: 100%;
+}
+
+.popup-container-fb-vote {
+    border: solid 0px;
+    background-color: none;
+    border-radius: 0px 0px 0px 25px;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+}
+
+.btnvoteup {
+    border: solid 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 80%;
+    background-color: var(--nord10);
+    width: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btnvotedown {
+    border: solid 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 80%;
+    background-color: var(--nord10);
+    width: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    transform: translateY(-50%);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.studentselect {
+    border: solid 0px;
+    border-color: var(--bg);
+    cursor: pointer;
+    border-radius: 25px 0px 25px 0px;
+    background-color: var(--bg);
+    height: 8%;
+    width: 25%;
+    position: absolute;
+    background: var(--bg);
+}
+

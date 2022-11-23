@@ -11,16 +11,54 @@
 </head>
 <body>
      <div class="begeleider-container">
+        <div class="begeleider-container-draw">
+            <div class="draw-left">
+                <div class="studentselect" onclick="alert('Komt binnenkort')">
+                    <img id="icon-studentsel" src="sources/afb/icons/user.png">
+                    <h1 id="h1-studentensel">Selecteer</h1>
+                </div>
+            </div>
+            <div class="draw-right">
+                <div id="app-cal-schedule" class="app-cal-schedule div_Show">
+                    Schedule (Moet nog komen)
+                </div>
+                <div id="app-cal-actual" class="app-cal-actual div_Away">
+                    Actueele Agenda (Moet nog komen)
+                </div>
+            </div>
+        </div>
         <div class="begeleider-container-bottombar">
             <div class="controlbar">
+               <div class="controlbar-logout" onclick="alert('komt binnekort'); window.location.href = 'index.html'">
+                    <img id="controlbox-logout-img" class="actcal" src="sources/afb/icons/logout.ico">
+                </div>
+                <div class="toolbox-cal" onclick="switchcal()">
+                    <img id="cal-act-ico" src="sources/afb/icons/calendar-act.png">
+                    <script src="sources/js/begeleider/calswitch.js"></script>
+                </div>
+                <div class="toolbox-feedback" onclick="feedbackBtn()">
+                    <img id="fb-ico" src="sources/afb/icons/feedback.png">
+                    <script src="sources/js/begeleider/feedback.js"></script>
+                </div>
+            </div>
+        </div>
 
+        <div id="popup-cont-fb" class="popup-container-fb div_Away">
+            <div class="popup-container-fb-header">
+                <h1 id="popup-cont-fb-header-h1">Hoe doet de student het?</h1>
             </div>
-        </div>
-        <div class="begeleider-container-display">
-            <div class="begeleider-container-display-draw">
-                
+            <div class="popup-container-fb-vote">
+                <div class="btnvoteup" onclick="fb_voteup()">
+                    <img id="popup-container-fb-voteup" src="sources/afb/icons/thumbsup.png">
+                </div>
+                <div class="btnvotedown" onclick="fb_votedown()">
+                    <img id="popup-container-fb-votedown" src="sources/afb/icons/thumbsdown.png">
+                </div>
             </div>
+
         </div>
+
      </div>
+
 </body>
 </html>
