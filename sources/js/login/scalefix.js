@@ -4,8 +4,10 @@ function scalefix() {
     var rolbox = document.getElementById('container-login-prompt-auth');
     var userbox = document.getElementById('db-logincontainer-username-label');
 
-
-    if (screen.width <= 1368) {
+    if (screen.width <= 699) {
+        window.location.href = "mobile.htm";
+    }
+    else if (screen.width <= 1368) {
         header.style.fontSize = "35px";
         rolbox.style.fontSize = "8px";
         userbox.style.fontSize = "16px";

@@ -1,0 +1,38 @@
+
+.container-mobile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: solid 0px;
+    overflow: hidden;
+}
+
+.notifcation-lib-base-mobile {
+    position: absolute;
+    border: solid 0px;
+    border-radius: 25px;
+    background-color: var(--nord10);
+    height: 40%;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#notify-mobile-h {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    font-size: auto;
+}
+
+#notify-mobile-p {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    font-size: auto;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
