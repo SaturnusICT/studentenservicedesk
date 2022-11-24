@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +10,11 @@
     <link rel="stylesheet" href="sources/style/global.css">
     <link rel="stylesheet" href="sources/style/begeleider/global.css">
 </head>
-<body>
-     <div class="begeleider-container">
+
+<body onload="addMyEvents()">
+    <div id="begeleider-container" class="begeleider-container blur_Off">
         <div class="begeleider-container-draw">
             <div class="draw-left">
-                <div class="studentselect" onclick="alert('Komt binnenkort')">
-                    <img id="icon-studentsel" src="sources/afb/icons/user.png">
-                    <h1 id="h1-studentensel">Selecteer</h1>
-                </div>
             </div>
             <div class="draw-right">
                 <div id="app-cal-schedule" class="app-cal-schedule div_Show">
@@ -29,7 +27,7 @@
         </div>
         <div class="begeleider-container-bottombar">
             <div class="controlbar">
-               <div class="controlbar-logout" onclick="alert('komt binnekort'); window.location.href = 'index.html'">
+                <div class="controlbar-logout" onclick="controlbox_logout_confirm()">
                     <img id="controlbox-logout-img" class="actcal" src="sources/afb/icons/logout.ico">
                 </div>
                 <div class="toolbox-cal" onclick="switchcal()">
@@ -39,6 +37,10 @@
                 <div class="toolbox-feedback" onclick="feedbackBtn()">
                     <img id="fb-ico" src="sources/afb/icons/feedback.png">
                     <script src="sources/js/begeleider/feedback.js"></script>
+                </div>
+                <div class="student-switch" onclick="studentSwitch()">
+                    <img id="ss-ico" src="sources/afb/icons/user.png">
+                    <script src="sources/js/begeleider/student.js"></script>
                 </div>
             </div>
         </div>
@@ -58,7 +60,35 @@
 
         </div>
 
-     </div>
+        <div id="selectlist-student" class="userlist-select-student div_Away">
+            <div class="selectlist-student-header">
+                <h1 id="selectlist-student-header-h1">Studenten</h1>
+            </div>
+            <div class="selectlist-student-students">
+                <button id="selectlist-example-1" class="student-btns">Jay Verrijt</button>
+                <button id="selectlist-example-2" class="student-btns">John Doe</button>
+            </div>
+        </div>
+    </div>
+
+       <div id="notify_logout_begeleider" class="notifcation-lib-base div_Away">
+            <div class="notifcation-lib-header">
+                <h1 id="notify-slogout-h1">Weet je zeker dat je wilt uitloggen?</h1>
+            </div>
+            <div class="notify-lib-par">
+                <p id="notify-slogout-p">
+                    Weet u zeker dat u wilt uitloggen
+                    <br>
+                    Dit brengt u terug naar het inlogscherm
+                </p>
+            </div>
+            <div class="notify-lib-ctrl-yn-v-1">
+                <button onclick="notify_slogout_y()" class="notify-lib-ctrl-yn-y-v1-btn">Ja</button>
+                <button onclick="notify_slogout_n()" class="notify-lib-ctrl-yn-n-v1-btn">Nee</button>
+                <script src="sources/js/begeleider/logout.js"></script>
+            </div>
+        </div>
 
 </body>
+
 </html>
