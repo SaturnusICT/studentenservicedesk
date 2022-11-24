@@ -14,7 +14,7 @@ function notify_slogout_y() {
     notification.add('div_Away');
     mainpage.remove('blur_On');
     mainpage.add('blur_Off');
-    window.location.href = "index.html";
+    window.location.href = "/";
 
 
 }
