@@ -280,3 +280,23 @@ body {
     height: 80%;
     width: 100%;
 }
+
+.app-cal-schedule-titlebar {
+    border: solid 0px;
+    background-color: none;
+    background: none;
+    top: 0;
+    width: 60%;
+    position: absolute;
+    left: 2%;
+}
+
+.app-cal-actual-titlebar {
+    border: solid 0px;
+    background-color: none;
+    background: none;
+    top: 0;
+    width: 80%;
+    position: absolute;
+    left: 2%;
+}

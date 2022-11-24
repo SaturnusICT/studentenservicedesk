@@ -111,3 +111,13 @@
     text-align: center;
     color: var(--fg);
 }
+
+#app-cal-schedule-appname {
+    background: none;
+    color: var(--fg);
+}
+
+#app-cal-actual-appname {
+    background: none;
+    color: var(--fg);
+}
