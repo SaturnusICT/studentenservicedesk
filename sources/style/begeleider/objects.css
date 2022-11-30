@@ -121,3 +121,17 @@
     background: none;
     color: var(--fg);
 }
+
+#td-ico {
+    height: 25px;
+    width: 24px;
+    position: absolute;
+    left: 18%;
+    top: 15%;
+}
+
+#beg-doc-h1 {
+    color: white;
+    position: absolute;
+    left: 5%;
+}

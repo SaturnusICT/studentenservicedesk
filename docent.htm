@@ -8,19 +8,44 @@
     <link rel="shortcut icon" href="sources/afb/icons/favicon.ico">
     <link rel="stylesheet" href="sources/style/global.css">
     <link rel="stylesheet" href="sources/style/docent/global.css">
+    <script src="sources/js/docenten/dispcontrol.js"></script>
 </head>
 <body>
      <div class="docenten-container">
         <div class="docenten-container-bottombar">
             <div class="controlbar">
+                <div class="controlbar-logout" onclick="alert('Placeholder!');">
+                    <img id="controlbox-logout-img" src="sources/afb/icons/logout.ico">
+                </div>
+                <div class="controlbar-mvdisp" onclick="dispControl()">
+                    <h1 id="dispMvArrow">🢂</h1>
+                </div>
 
             </div>
         </div>
         <div class="docenten-container-display">
             <div class="docenten-container-display-draw">
-                
+                <div class="docent-container-display-draw-main div_Show">
+                    <div class="display-draw-left">
+                        <div class="screen">
+                            <div class="left-a div_Show" id="docla">
+                            </div>
+                            <div class="left-b div_Away" id="doclb">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="display-draw-right">
+                    </div>
+                    <div class="display-draw-toolbar">
+                        <div class="screen">
+                            <div class="toolbar-a div_Show" id="docta">
+                            </div>
+                            <div class="toolbar-b div_Away" id="doctb">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-     </div>
-</body>
+         </div>
+    </body>
 </html>
