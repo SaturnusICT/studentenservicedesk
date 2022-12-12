@@ -32,3 +32,119 @@
     position: relative;
     top: 15%;
 }
+
+#notify-dlogout-h1 {
+    background-color: var(--nord10);
+    background: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#notify-dlogout-par {
+    background-color: var(--nord10);
+    background-color: var(--nord10);
+    color: var(--fg);
+    justify-content: center;
+    position: relative;
+    top: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#doc_titlebar {
+    color: var(--fg);
+    font-size: small;
+    position: absolute;
+    left: 2%;
+}
+
+#btn_doc_Stud {
+    position: absolute;
+    height: 5%;
+    width: 40%;
+    border: none;
+    border-radius: 18px;
+    left: 2%;
+    background-color: var(--bg);
+    color: var(--fg);
+    top: 2%;
+    cursor: pointer;
+}
+#btn_doc_Stud_pdf {
+    position: absolute;
+    height: 5%;
+    width:10%;
+    border: none;
+    border-radius: 18px;
+    left: 45%;
+    background-color: var(--bg);
+    color: var(--fg);
+    top: 2%;
+    cursor: pointer;
+}
+
+#btn_doc_Beg {
+    position: absolute;
+    height: 5%;
+    width: 40%;
+    border: none;
+    border-radius: 18px;
+    left: 2%;
+    background-color: var(--bg);
+    color: var(--fg);
+    top: 10%;
+    cursor: pointer;
+}
+#btn_doc_Beg_pdf {
+    position: absolute;
+    height: 5%;
+    width:10%;
+    border: none;
+    border-radius: 18px;
+    left: 45%;
+    background-color: var(--bg);
+    color: var(--fg);
+    top: 10%;
+    cursor: pointer;
+}
+
+#btn_doc_Doc {
+    position: absolute;
+    height: 5%;
+    width: 40%;
+    border: none;
+    border-radius: 18px;
+    left: 2%;
+    background-color: var(--bg);
+    color: var(--fg);
+    top: 18%;
+    cursor: pointer;
+}
+#btn_doc_Doc_pdf {
+    position: absolute;
+    height: 5%;
+    width:10%;
+    border: none;
+    border-radius: 18px;
+    left: 45%;
+    background-color: var(--bg);
+    color: var(--fg);
+    top: 18%;
+    cursor: pointer;
+}
+
+#btn_Documentation {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 18px;
+    border: solid 0px;
+    background-color: var(--bg);
+    left: 12%;
+    transform: translateY(-50%);
+    top: 3%;
+    cursor: pointer;
+}
